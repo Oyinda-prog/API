@@ -22,17 +22,17 @@ const getComment=()=>{
   return (
     <>
   
-    <button className='btn btn-primary' onClick={getComment}>Click</button>
+    <button className='btn btn-primary' onClick={getComment}>Click me</button>
+    <table key={item.id} className='table table-success table-striped' border={"1"}>
     {comment.map((item) => (
-        <table key={item.id} className='table table-success table-striped' border={"1"}>
             <tr>
                 <th>{item.id}</th>
                 <th>{item.email}</th>
                 <th>{item.body}</th>
                 <th></th>
             </tr>
-        </table>
       ))}
+      </table>
    
     
   
